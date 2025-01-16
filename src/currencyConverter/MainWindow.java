@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
+import static java.awt.Color.black;
+
 public class MainWindow extends JFrame {
 	private JPanel contentPane;
 	private JTextField fieldAmount;
@@ -83,19 +85,19 @@ public class MainWindow extends JFrame {
 		// Componentes de la ventana
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.WHITE);
-		contentPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+		contentPane.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20)); // Aumentar el espacio alrededor del contenido
 		setContentPane(contentPane);
 		contentPane.setLayout(new GridBagLayout()); // Usar GridBagLayout para una interfaz responsiva
 
 		// Configuración de GridBagConstraints
 		GridBagConstraints gbc = new GridBagConstraints();
-		gbc.insets = new Insets(5, 5, 5, 5); // Espaciado entre componentes
+		gbc.insets = new Insets(10, 10, 10, 10); // Aumentar el espaciado entre componentes
 		gbc.fill = GridBagConstraints.HORIZONTAL;
 
-		// Botón "Cantidad"
-		JButton btnAmount = new JButton("Cantidad");
-		btnAmount.setBackground(new Color(173, 216, 230)); // Azul claro
-		btnAmount.setForeground(Color.BLACK);
+		// Botón "Ingresar Cantidad"
+		JButton btnAmount = new JButton("Ingresar Cantidad");
+		btnAmount.setBackground(new Color(52, 152, 219)); // Azul #3498db
+		btnAmount.setForeground(black);
 		btnAmount.setFont(new Font("Arial", Font.BOLD, 12));
 		gbc.gridx = 0;
 		gbc.gridy = 0;
@@ -112,10 +114,10 @@ public class MainWindow extends JFrame {
 		gbc.weightx = 1.0; // Hacer que el campo de texto ocupe el espacio restante
 		contentPane.add(fieldAmount, gbc);
 
-		// Botón "Convertido a"
-		JButton btnConvertedTo = new JButton("Convertido a");
-		btnConvertedTo.setBackground(new Color(173, 216, 230)); // Azul claro
-		btnConvertedTo.setForeground(Color.BLACK);
+		// Botón "Seleccione Moneda"
+		JButton btnConvertedTo = new JButton("Seleccione Moneda");
+		btnConvertedTo.setBackground(new Color(52, 152, 219)); // Azul #3498db
+		btnConvertedTo.setForeground(black);
 		btnConvertedTo.setFont(new Font("Arial", Font.BOLD, 12));
 		gbc.gridx = 0;
 		gbc.gridy = 1;
@@ -133,6 +135,17 @@ public class MainWindow extends JFrame {
 		gbc.weightx = 1.0;
 		contentPane.add(comboBoxCountry1, gbc);
 
+		// Botón "Convertir a"
+		JButton btnConvertTo = new JButton("Convertir a");
+		btnConvertTo.setBackground(new Color(52, 152, 219)); // Azul #3498db
+		btnConvertedTo.setForeground(black);
+		btnConvertTo.setFont(new Font("Arial", Font.BOLD, 12));
+		gbc.gridx = 0;
+		gbc.gridy = 2;
+		gbc.gridwidth = 1;
+		gbc.weightx = 0;
+		contentPane.add(btnConvertTo, gbc);
+
 		// ComboBox de la segunda moneda
 		JComboBox<String> comboBoxCountry2 = new JComboBox<>();
 		populate(comboBoxCountry2, currencies);
@@ -143,10 +156,10 @@ public class MainWindow extends JFrame {
 		gbc.weightx = 1.0;
 		contentPane.add(comboBoxCountry2, gbc);
 
-		// Botón "Convertir"
-		JButton btnConvert = new JButton("Convertir");
-		btnConvert.setBackground(new Color(0, 0, 139)); // Azul oscuro
-		btnConvert.setForeground(Color.WHITE);
+		// Botón "Aceptar"
+		JButton btnConvert = new JButton("Aceptar");
+		btnConvert.setBackground(new Color(52, 152, 219)); // Azul #3498db
+		btnConvertedTo.setForeground(black);
 		btnConvert.setFont(new Font("Arial", Font.BOLD, 14));
 		gbc.gridx = 0;
 		gbc.gridy = 3;
@@ -164,7 +177,7 @@ public class MainWindow extends JFrame {
 		gbc.weightx = 1.0;
 		contentPane.add(lblResult, gbc);
 
-		// Acción del botón "Convertir"
+		// Acción del botón "Aceptar"
 		btnConvert.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
