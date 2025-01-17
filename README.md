@@ -3,6 +3,7 @@ CONVERSOR DE MONEDAS
 Este proyecto es una aplicación de escritorio desarrollada en Java que permite a los usuarios convertir cantidades de una moneda a otra de manera rápida y sencilla. La interfaz gráfica es intuitiva y está diseñada para facilitar la conversión entre diferentes divisas con solo unos pocos clics.
 
 Características principales
+
 Interfaz gráfica amigable: La aplicación cuenta con una ventana principal que permite seleccionar la moneda de origen, la moneda de destino y la cantidad a convertir.
 
 Conversión en tiempo real: Al ingresar la cantidad, el programa realiza la conversión automáticamente y muestra el resultado en la pantalla.
@@ -36,15 +37,5 @@ Currency.java: Clase que maneja la información de las monedas y las tasas de ca
 
 AboutWindow.java: Ventana que muestra información adicional sobre la aplicación.
 
-Personalización
-El programa utiliza un archivo de localización (translation.properties) para manejar los textos mostrados en la interfaz. Esto permite adaptar la aplicación a diferentes idiomas de manera sencilla.
 
-Ejecución del programa
-Para ejecutar la aplicación, sigue estos pasos:
-
-Clona o descarga el repositorio.
-
-Abre una terminal o línea de comandos en la carpeta del proyecto.
-
-Compila el código con el siguiente comando:
 
