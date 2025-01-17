@@ -1,7 +1,12 @@
-# Ignorar archivos compilados de Java
-*.class
-out/
-
-# Ignorar configuración de IntelliJ IDEA
+# Ignorar archivos generados por IDEs
 .idea/
+out/
 *.iml
+
+# Ignorar archivos compilados y ejecutables
+*.jar
+*.class
+
+# Ignorar archivos temporales o no deseados
+git push
+oysena.edu.co*
