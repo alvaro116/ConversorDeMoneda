@@ -1,23 +1,50 @@
-# currency-converter-in-java
+CONVERSOR DE MONEDAS
 
+Este proyecto es una aplicación de escritorio desarrollada en Java que permite a los usuarios convertir cantidades de una moneda a otra de manera rápida y sencilla. La interfaz gráfica es intuitiva y está diseñada para facilitar la conversión entre diferentes divisas con solo unos pocos clics.
 
-Currency converter (or currency exchange) is a mini project coded in Java programming language. This simple application provides a web-based interface for exchanging/converting money from one currency (say $) to another currency (say €).
+Características principales
+Interfaz gráfica amigable: La aplicación cuenta con una ventana principal que permite seleccionar la moneda de origen, la moneda de destino y la cantidad a convertir.
 
-The complete source code of currency exchange application can be downloaded from the link below. As this is just a mini project, project report and documentation are not available. You can go through the description below for project abstract.
+Conversión en tiempo real: Al ingresar la cantidad, el programa realiza la conversión automáticamente y muestra el resultado en la pantalla.
 
-Currency Converter Project Abstract:
-Different countries use different currency, and there is daily variation in these currencies relative to one another. Those who transfer money from one country to another (one currency to another) must be updated with the latest currency exchange rates in the market.
+Soporte para múltiples monedas: El conversor incluye una amplia variedad de monedas internacionales, con tasas de cambio actualizadas.
 
-Currency converter mini project is built keeping this thing in mind. It is simply a calculator-like app developed using Ajax, Java servlets web features. In this application, there is regular update about currency of every country by which it displays present currency market value and conversion rate.
+Precisión en los cálculos: Los resultados se muestran con un formato de dos decimales para garantizar precisión en las conversiones.
 
-Such application can be used by any user, but it is mainly useful for business, shares, and finance related areas where money transfer and currency exchange takes place on a daily basis.
+Menú de ayuda: Incluye opciones para obtener información sobre la aplicación y salir del programa.
 
-In this currency converter app, users are provided with an option to select the type of conversion, i.e. from “this” currency to “that” currency. This simple feature allows users to enter amount to be converted (say currency in Dollars), and display the converted amount (say currency in Euro).
+Requisitos del sistema
+Java Runtime Environment (JRE): Versión 8 o superior.
 
+Sistema operativo: Windows, macOS o Linux.
 
+Instrucciones de uso
+Selecciona la moneda de origen: En el primer menú desplegable, elige la moneda desde la cual deseas convertir.
 
-visit more projects - https://projectworlds.in
+Selecciona la moneda de destino: En el segundo menú desplegable, elige la moneda a la cual deseas convertir.
 
-demo- https://www.projectworlds.in/java-projects-with-source-code/currency-converter-java-mini-project/
+Ingresa la cantidad: Escribe la cantidad que deseas convertir en el campo de texto.
 
+Haz clic en "Convertir": El resultado de la conversión se mostrará automáticamente en la parte inferior de la ventana.
+
+Estructura del proyecto
+El proyecto está organizado de la siguiente manera:
+
+MainWindow.java: Clase principal que contiene la lógica de la interfaz gráfica y la funcionalidad de conversión.
+
+Currency.java: Clase que maneja la información de las monedas y las tasas de cambio.
+
+AboutWindow.java: Ventana que muestra información adicional sobre la aplicación.
+
+Personalización
+El programa utiliza un archivo de localización (translation.properties) para manejar los textos mostrados en la interfaz. Esto permite adaptar la aplicación a diferentes idiomas de manera sencilla.
+
+Ejecución del programa
+Para ejecutar la aplicación, sigue estos pasos:
+
+Clona o descarga el repositorio.
+
+Abre una terminal o línea de comandos en la carpeta del proyecto.
+
+Compila el código con el siguiente comando:
 
